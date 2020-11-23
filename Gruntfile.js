@@ -655,6 +655,13 @@ module.exports = function(grunt) {
 			}
 		},
 		qunit: {
+			options: {
+				puppeteer: {
+					// Chromium requires --no-sandbox when used inside Docker.
+					// Let CI and dev environments inject this as-needed.
+					args: ( process.env.CHROMIUM_FLAGS || '' ).split( ' ' )
+				}
+			},
 			files: [
 				'tests/qunit/**/*.html',
 				'!tests/qunit/editor/**'
