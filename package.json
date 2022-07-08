@@ -140,7 +140,7 @@
 		"jquery-ui": "https://github.com/jquery/jquery-ui/archive/1.11.4.tar.gz",
 		"lodash": "4.17.19",
 		"masonry-layout": "4.2.2",
-		"moment": "2.27.0",
+		"moment": "2.29.4",
 		"polyfill-library": "3.42.0",
 		"react": "16.9.0",
 		"react-dom": "16.9.0",
